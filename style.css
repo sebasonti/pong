@@ -6,12 +6,15 @@
     --hue: 300;
     --saturation: 50%;
     --foreground-color: hsl(var(--hue), var(--saturation), 75%);
-    --background-color: hsl(var(--hue), var(--saturation), 20%);
+    --background-color: hsl(var(--hue), var(--saturation), 30%);
+    /* --background-color-oposite: hsl(calc(var(--hue) + 180), var(--saturation), 30%); */
 }
 
 body {
     margin: 0;
     background-color: var(--background-color);
+    /* background: linear-gradient(to left, var(--background-color), var(--background-color-oposite)); */
+    overflow: hidden;
 }
 
 .paddle {
